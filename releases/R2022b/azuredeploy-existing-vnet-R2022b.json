@@ -478,15 +478,6 @@
                       "properties": {
                         "subnet": {
                           "id": "[variables('subnet')]"
-                        },
-                        "publicIpAddressConfiguration": {
-                          "name": "[variables('publicIpPostfix')]",
-                          "properties": {
-                            "dnsSettings": {
-                              "domainNameLabel": "[concat(variables('vmssName'), variables('dnsLabelPrefix'))]"
-                            },
-                            "idleTimeoutInMinutes": "[variables('publicIpTimeout')]"
-                          }
                         }
                       }
                     }
