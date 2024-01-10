@@ -476,7 +476,10 @@
                     {
                       "name": "[concat(variables('vmssName'), variables('publicIpConfigPostfix'))]",
                       "properties": {
-                        }
+                        "subnet": {
+                          "id": "[variables('subnet')]"
+                        },
+                        "publicIpAddressConfiguration": null
                       }
                     }
                   ],
